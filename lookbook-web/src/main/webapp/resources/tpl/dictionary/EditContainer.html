@@ -1,0 +1,28 @@
+<script type="text/x-jquery-tmpl">
+    <h3>Справочник "${title}"</h3>
+    {{if usageType == "edit"}}
+        <div class="alertBox"></div>
+    {{/if}}
+    {{if usageType == "combine"}}
+        <div id="selectMainDictionary" class="btn-group" >
+            <a class="btn btn-large dropdown-toggle" data-toggle="dropdown"></a>
+            <ul class="dropdown-menu"></ul>
+        </div>
+    {{/if}}
+    <div>
+        <table class="table table-bordered table-condensed cell-middle-align">
+            <thead>
+            <tr class="filteredHeader">
+                <th name="id">#</th>
+                <th name="ruValue">Значение на русском <i class=""></i></th>
+                <th name="enValue">Значение на английском <i class=""></i></th>
+                <th>Ключ</th>
+                {{if usageType == "edit"}}
+                    <th></th>
+                {{/if}}
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</script>

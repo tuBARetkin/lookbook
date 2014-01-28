@@ -1,0 +1,33 @@
+<script type="text/x-jquery-tmpl">
+    <tr>
+        <td name="id">
+            {{if usageType == "edit"}}
+                ${id}
+            {{else}}
+                <label class="checkbox">${id}<input type="checkbox"></label>
+            {{/if}}
+        </td>
+        {{if usageType == "edit"}}
+            <td><input name="ruValue" disabled type="text" class="input-block-level" value="${ruValue}"></td>
+            <td><input name="enValue" disabled type="text" class="input-block-level" value="${enValue}"></td>
+        {{else}}
+            <td>${ruValue}</td>
+            <td>${enValue}</td>
+        {{/if}}
+        <td name="dataKey">
+            {{if dataKey}}
+                ${dataKey}
+            {{else}}
+                <input disabled type="text" class="input-block-level">
+            {{/if}}
+        </td>
+        {{if usageType == "edit"}}
+        <td>
+            <div class="btn-group text-center-align">
+                <button class="btn btn-mini edit" type="button"><i class="icon-pencil"></i></button>
+                <button class="btn btn-mini cancel" type="button" disabled><i class="icon-remove"></i></button>
+            </div>
+        </td>
+        {{/if}}
+    </tr>
+</script>

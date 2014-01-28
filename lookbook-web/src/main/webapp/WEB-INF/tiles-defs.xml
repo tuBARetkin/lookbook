@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <definition name="lookbook/dictionaryLayout" template="/WEB-INF/views/dictionary-layout.jsp">
+        <put-attribute name="title" value="LookBook Dictionary"/>
+    </definition>
+
+    <definition name="lookbook/homeLayout" template="/WEB-INF/views/home-layout.jsp">
+        <put-attribute name="title" value="LookBook Main"/>
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    </definition>
+
+    <definition name="lookbook/dictionary/edit" extends="lookbook/dictionaryLayout">
+        <put-attribute name="navbar" value="/WEB-INF/views/dictionary/layout.jsp" />
+        <put-attribute name="page" value="/WEB-INF/views/dictionary/edit.jsp"/>
+        <put-attribute name="activeTab" value="dic-edit"/>
+    </definition>
+
+    <definition name="lookbook/dictionary/combine" extends="lookbook/dictionaryLayout">
+        <put-attribute name="navbar" value="/WEB-INF/views/dictionary/layout.jsp" />
+        <put-attribute name="page" value="/WEB-INF/views/dictionary/combine.jsp"/>
+        <put-attribute name="activeTab" value="dic-combine"/>
+    </definition>
+
+    <definition name="lookbook/home/flow" extends="lookbook/homeLayout">
+        <put-attribute name="body" value="/WEB-INF/views/home/flow.jsp"/>
+    </definition>
+
+    <definition name="lookbook/diary" extends="lookbook/homeLayout">
+        <put-attribute name="body" value="/WEB-INF/views/diary/main.jsp"/>
+    </definition>
+</tiles-definitions>

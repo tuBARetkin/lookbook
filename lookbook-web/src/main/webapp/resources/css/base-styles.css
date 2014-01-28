@@ -1,0 +1,88 @@
+.mouseOnRow{
+    background-color: #F5F5DC;
+}
+
+.cell-middle-align td {
+    vertical-align: middle;
+}
+
+.cell-middle-align thead th {
+    vertical-align: middle;
+}
+
+.cell-middle-align thead th i {
+    width: 14px;
+}
+
+.cell-middle-align input {
+    margin-bottom: 0;
+}
+
+.text-center-align{
+    text-align: center;
+}
+
+.table tr:not(.rowEdited):not(.rowError):not(.filteredHeader):hover {
+    background-color: #FFFFF0;
+}
+
+.table .filteredHeader{
+    background-color: rgba(160, 200, 255, 0.34);
+}
+
+.table .rowEdited {
+    background-color: #E0EEE0;
+}
+
+.table .rowError {
+    background-color: #F2DEDE;
+}
+
+.table th {
+    cursor: pointer;
+}
+
+.table .checkbox {
+    margin-bottom: 0;
+}
+
+.dropdown-menu li,a{
+    cursor: pointer;
+}
+
+#dictionaryCombineContainer #combine-controls{
+    margin-top: 15%;
+}
+
+#dictionaryCombineContainer #selectMainDictionary{
+    margin-bottom: 10px;
+}
+
+.alert{
+    margin-bottom: 0px;
+}
+
+#combineMainButtons button{
+    margin-top: 7px;
+}
+
+#combineMainButtons #selectCombinerBox{
+    margin-right: 30px;
+}
+
+.circleTab {
+    width: 150px;
+    height: 150px;
+    background: red;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+}
+
+.circleTab:hover {
+    background: gray;
+}
+
+#authWindow {
+    width: 360px;
+}
